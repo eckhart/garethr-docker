@@ -16,6 +16,7 @@ class docker::params {
     'Debian': { $package_source_location = 'https://get.docker.io/ubuntu' }
     default:  { $package_source_location = '' }
   }
+  $exec_driver                  = undef
   $proxy                        = undef
   $no_proxy                     = undef
 }

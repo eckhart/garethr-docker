@@ -21,6 +21,7 @@ class docker::service (
   $service_state        = $docker::service_state,
   $service_enable       = $docker::service_enable,
   $root_dir             = $docker::root_dir,
+  $exec_driver          = $docker::exec_driver,
   $extra_parameters     = $docker::extra_parameters,
   $proxy                = $docker::proxy,
   $no_proxy             = $docker::no_proxy,

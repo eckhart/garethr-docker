@@ -72,6 +72,7 @@ class docker(
   $root_dir                    = $docker::params::root_dir,
   $manage_kernel               = true,
   $dns                         = $docker::params::dns,
+  $exec_driver                 = $docker::params::exec_driver,
   $extra_parameters            = undef,
   $proxy                       = $docker::params::proxy,
   $no_proxy                    = $docker::params::no_proxy,
