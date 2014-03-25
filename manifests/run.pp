@@ -17,6 +17,7 @@ define docker::run(
   $env = [],
   $dns = [],
   $lxc_conf = [],
+  $privileged = false,
   $restart_service = true,
   $disable_network = false,
 ) {
@@ -33,6 +34,7 @@ define docker::run(
   }
   validate_bool($running)
   validate_bool($disable_network)
+  validate_bool($privileged)
 
   $ports_array = any2array($ports)
   $volumes_array = any2array($volumes)
